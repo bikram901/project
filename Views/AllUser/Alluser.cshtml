@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Crud_Operation.Models.UserClass>
+@{
+    ViewData["Title"] = "Alluser1";
+}
+
+
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="~/lib/jquery/dist/Get_all.js"></script> 
+	@* <script src="d:\aspnet_mvc\crud_operation\crud_operation\wwwroot\lib\jquery\dist\get_all.js"></script> *@
+</head>
+
+<body>
+    <h1 class="text-center">All Users Details</h1>
+    <hr />
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10" id="alldata">
+
+              </div>
+              <div class="col-sm-1"></div>
+          </div>  
+        @* <table class="table table-dark table-responsive" id="alluserdata">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">Name</th>
+                    <th class="text-center" scope="col">Mobile</th>
+                    <th class="text-center" scope="col">Email</th>
+                    <th class="text-center" scope="col">Dob</th>
+                    <th class="text-center" scope="col">UserName</th>
+                    <th scope="col">PassWord</th>  
+                    <th class="text-center" scope="col">Role</th>
+                </tr>
+            </thead>
+            <tbody id="alldata">
+                @{
+                    foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@item.name</td>
+                            <td>@item.mob</td>
+                            <td>@item.email</td>
+                            <td>@item.dob</td>
+                            <td>@item.username</td>
+                             <td>@Model.password</td>  
+                            <td>@item.userrole</td>
+                        </tr>
+                    }
+                } 
+
+            </tbody>
+        </table>  *@
+      </div>
+     
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+<html>
+
+    <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="~/lib/jquery/dist/javascript.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" style="border:5px solid yellowgreen; padding:10px" >
+                    Name
+                    <input type="text" id="txtname" class="form-control" />
+                    Mobile Number
+                    <input type="number" id="txtmob" class="form-control" />
+                    Email Address
+                    <input type="text" id="txtemail" class="form-control" />
+                    DOB
+                    <input type="date" id="txtdob" class="form-control" />
+                    UserName
+                    <input type="text" id="txtun" class="form-control" />
+                    Password
+                    <input type="password" id="txtpwd" class="form-control" />
+                    Confirm Password
+                    <input type="password" id="txtcnpwd" class="form-control" />
+                    <br />
+                    <select class="form-control" id="userrole" name="UserRole">
+                        <option id="def">Select Role</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                    </select>
+                    <br /><br />
+                    <button class="btn btn-success w-25" id="btns">Sign Up</button>
+                    <a class="btn btn-dark float-end w-auto text-center" href="/UserLogin/Login">Go To Login</a>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateData";
+}
+
+
+
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="~/lib/jquery/dist/Update.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"style="border:solid 4px darkgoldenrod;border-radius:10px; padding:10px;">
+                Name
+                <input type="text" id="txtname" class="form-control" />
+                Mobile Number
+                <input type="number" id="txtmob" class="form-control" />
+                Email Address
+                <input type="text" id="txtemail" class="form-control" />
+                DOB
+                <input type="date" id="txtdob" class="form-control" />
+                UserName
+                <input type="text" id="txtun" class="form-control" /> 
+                Password
+                <input type="password" id="txtpwd" class="form-control" />
+                Confirm Password
+                <input type="password" id="txtcnpwd" class="form-control" />
+                <br />
+                <button class="btn btn-success w-25" id="btns">Save</button>
+                <a class="btn btn-dark float-end w-auto text-center" href="/AllUser/Alluser">Cancel</a>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+</body>
+</html>

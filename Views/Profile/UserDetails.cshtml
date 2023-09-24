@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@* @model Crud_Operation.Models.UserClass *@
+ @model Crud_Operation.Models.UserLogin 
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="~/lib/jquery/dist/User_Login.js"></script>
+    <script src="~/lib/jquery/dist/Userdetail.js"></script>
+   
+</head>
+    
+<body>
+
+    <div class=" card text-center">
+        <div class="card-header">
+            <h1 class="text-center font-monospace text-success">USER DETAILS</h1>
+            <hr />
+        </div>
+       @*  <div class="card-body">
+            <div class="row">
+                <label>Name :- @Model.name </label>
+            </div>
+            <div class="row">
+                <label>Mobile :- @Model.mob</label>
+            </div>
+            <div class="row">
+                <label>Email :- @Model.email</label>
+            </div>
+            <div class="row">
+                <label>DOB :- @Model.dob</label>
+            </div>
+            <div class="row">
+                <label>UserName :- @Model.username</label>
+            </div>
+            <div class="row">
+                <label>PassWord :- @Model.password</label>
+            </div>
+            <div class="row">
+                <label>Role :- @Model.userrole</label>
+            </div>
+        </div>*@
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">Name</th>
+                    <th class="text-center" scope="col">Mobile</th>
+                    <th class="text-center" scope="col">Email</th>
+                    <th class="text-center" scope="col">Dob</th>
+                    <th class="text-center" scope="col">UserName</th>
+                    @* <th scope="col">PassWord</th> *@
+                    <th class="text-center" scope="col">Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>@Model.name</td>
+                    <td>@Model.mob</td>
+                    <td>@Model.email</td>
+                    <td>@Model.dob</td>
+                    <td>@Model.username</td>
+                    @* <td>@Model.password</td> *@
+                    <td>@Model.userrole</td>
+                </tr>
+                
+            </tbody>
+        </table>
+            <br /><br />
+             @{
+                if (Model.userrole == "User")
+                {
+                    <div class="row">
+                    <a class="btn btn-success" id="btnlogout" href="/UserLogin/Login">Log Out</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="row">
+                    <a class="w-25 btn btn-dark col-sm-4 m-5" id="btnlogout" href="/UserLogin/Login">Log Out</a>
+                    <div class="col-sm-2"></div>
+                    <a class="w-25 btn btn-dark col-sm-4 m-5 float-end btnall" href="/AllUser/Alluser">All User Details</a>
+                    
+                    </div>
+                }
+
+            } 
+        
+    </div>
+
+</body>
+
+</html>
